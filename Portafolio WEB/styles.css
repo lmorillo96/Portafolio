@@ -13,11 +13,10 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-    scroll-behavior: 'smooth'; 
 }
 
 body {
-    height: 100vw;
+    width: 100vw;
     font-family: var(--font);
     background-color: var(--s-color);
 }
@@ -28,10 +27,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
     background-color: var(--p-color);
     color: var(--s-color);
     padding: 30px 10%;
     min-height: 5%;
+    z-index: 1;
 }
 
 
@@ -129,19 +132,12 @@ li, a, button {
 }
 
 .hero__img {
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
     border-radius: 50%;
-    object-fit: cover;
-    object-position: top;
     cursor: pointer;
     transition: var(--t-animation);
 }
 
-.hero__img:hover{
-    width: 320px;
-    height: 320px;
-}
 
 .hero__container img {
     box-shadow: var(--shadow);
@@ -155,6 +151,8 @@ li, a, button {
 }
 
 .skills__title {
+    display: block;
+    width: 100%;
     padding: 70px;
     font-size: 3em;
     color: var(--p-color);
@@ -195,6 +193,8 @@ li, a, button {
 }
 
 .portafolio__title {
+    display: block;
+    width: 100%;
     padding: 70px;
     font-size: 3em;
     color: var(--s-color);
@@ -350,7 +350,7 @@ li, a, button {
 .form {
     width: 90%;
     margin: auto;
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 1em;
     padding: 3.5em 1.5em;
     background-color: var(--b-color);
@@ -419,5 +419,171 @@ li, a, button {
 .contact__copyright::after {
     content: "leandro.m9601@gmail.com";
     color: blue;
+}
+
+@media (max-width: 1024px) {
+
+    header {
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .portafolio__card {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    .logo p {
+        font-size: 1.5em;
+    } 
+
+    .hero__img {
+        max-width: 200px;
+    }
+
+    li, a, button {
+        font-weight: 400;
+    }
+
+    .navbar__menu {
+        display: flex;
+    }
+
+    .portafolio__card {
+        width: 50%;
+    }
+
+    .card__contenido h3 {
+        font-size: 2em;
+    }
+
+    .card__contenido:hover h3 {
+        font-size: 2em;
+    }
+
+    .card__contenido p {
+        line-height: 1.5;
+        font-size: 1.2rem;
+    }
+
+    .card__contenido .btn {
+        padding: 20px;
+        margin-top: 20px;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    
+    .contact__title {
+        text-align: center;
+    }
+
+    .contact__title h2 {
+        font-size: 3em;
+    }
+
+    .contact__copy {
+        text-align: center;
+        font-size: 1.5em;
+        margin: 20px;
+    }
+
+    .contact__social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .hero__name {
+        font-size: 3em;
+    }
+
+    .hero__tag {
+        font-size: 2em;
+    }
+
+    .hero__paragraph {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .skills__icons {
+        flex-direction: column;
+        align-content: center;
+        gap: 30px;
+    }
+
+    .card__contenido p {
+        display: none;
+    }
+
+    .contact__container {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        margin-bottom: 50px;
+        width: 80%;
+    }
+
+    .portafolio__card {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .portafolio__title {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .portafolio__title:hover {
+        font-size: 36px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    body {
+        width: 100vw;
+    }
+
+    .logo p {
+        font-size: 16px;
+    }
+
+    .portafolio__title {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .portafolio__title:hover {
+        font-size: 2em;
+    }
+
+    .hero__name {
+        font-size: 30px;
+    }
+
+    .hero__name:hover {
+        font-size: 30px;
+    }
+} 
+
+@media (max-width: 320px) {
+
+    .hero__img {
+        max-width: 180px;
+    }
 }
 
