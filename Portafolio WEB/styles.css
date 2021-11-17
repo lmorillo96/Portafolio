@@ -16,7 +16,7 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     font-family: var(--font);
     background-color: var(--s-color);
 }
