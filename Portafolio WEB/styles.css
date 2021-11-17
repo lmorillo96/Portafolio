@@ -52,6 +52,7 @@ li, a, button {
 .logo p {
     transition: var(--t-animation);
     font-size: 25px;
+    margin-left: 30px;
 }
 
 .logo p:hover {
@@ -179,6 +180,10 @@ li, a, button {
     height: 150px;
     cursor: pointer;
     transition: var(--t-animation);
+}
+
+.circle {
+    border-radius: 50px;
 }
 
 .skills img:hover {
