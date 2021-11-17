@@ -16,7 +16,7 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     font-family: var(--font);
     background-color: var(--s-color);
 }
@@ -32,8 +32,8 @@ header {
     width: 100%;
     background-color: var(--p-color);
     color: var(--s-color);
-    padding: 30px 10%;
-    min-height: 5%;
+    padding: 0 20px;
+    height: 100px;
     z-index: 1;
 }
 
@@ -52,6 +52,7 @@ li, a, button {
 .logo p {
     transition: var(--t-animation);
     font-size: 25px;
+    margin-left: 30px;
 }
 
 .logo p:hover {
@@ -179,6 +180,10 @@ li, a, button {
     height: 150px;
     cursor: pointer;
     transition: var(--t-animation);
+}
+
+.circle {
+    border-radius: 50px;
 }
 
 .skills img:hover {
