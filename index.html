@@ -193,12 +193,12 @@
                 
             </div>
 
-            <form class="form" action="https://formspree.io/f/mknkdrzz" method="POST">
+            <form class="form" action="enviarcorreo.php" method="post">
                 <div class="form__container">
                     <h2 class="form__title">Contáctame</h2>
-                    <input type="text" class="form__input" placeholder="Nombre: " name= "name";>
-                    <input type="email" class="form__input"  placeholder="Correo: " name="_replyto">
-                    <textarea class="form__input form__input--message" placeholder="Escriba aqui su mensaje" name="message"></textarea>
+                    <input type="text" class="form__input" required="required" placeholder="Nombre: " name= "nombre";>
+                    <input type="email" class="form__input" required="required" placeholder="Correo: " name="email">
+                    <textarea class="form__input form__input--message" required="required" placeholder="Escriba aqui su mensaje" name="mensaje"></textarea>
 
                     <input type="submit" value="ENVIAR" class="form__cta">
                 </div>
