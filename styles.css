@@ -424,6 +424,10 @@ li, a, button {
     color: blue;
 }
 
+#trucazo{
+    opacity: 0;
+}
+
 @media (max-width: 1024px) {
 
     header {

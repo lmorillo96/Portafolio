@@ -193,16 +193,16 @@
                 
             </div>
 
-            <form class="form" action="enviarcorreo.php" method="post">
+            <form id="form" class="form" action="">
                 <div class="form__container">
                     <h2 class="form__title">Contáctame</h2>
-                    <input type="text" class="form__input" required="required" placeholder="Nombre: " name= "nombre";>
-                    <input type="email" class="form__input" required="required" placeholder="Correo: " name="email">
-                    <textarea class="form__input form__input--message" required="required" placeholder="Escriba aqui su mensaje" name="mensaje"></textarea>
-
+                    <input id="name" type="text" class="form__input" required="required" placeholder="Nombre: " name="nombre";>
+                    <input id="email" type="email" class="form__input" required="required" placeholder="Correo: " name="email">
+                    <textarea id="mensaje" class="form__input form__input--message" required="required" placeholder="Escriba aqui su mensaje" name="mensaje"></textarea>
                     <input type="submit" value="ENVIAR" class="form__cta">
                 </div>
             </form>
+            <a href="mailto:leandro.m9601@gmail.com" id="mailto"></a>
         </div>
 
         <p class="contact__copyright">
@@ -213,6 +213,6 @@
 
 </main>
 
-
+    <script src="contactame.js"></script>
 </body>
 </html>
